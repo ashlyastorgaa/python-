@@ -1,0 +1,12 @@
+ingresado=input("ingrese su contraseña:")
+ingresado2=input("ingrese nuevamente su contraseña:")
+
+while ingresado==ingresado2:
+ print("contraseña correcta")
+ break
+while ingresado!=ingresado2:
+  print("sus contraseñas no cooiciden,ingrese nuevamente")
+  ingresado=input("ingrese su contraseña:")
+  ingresado2=input("ingrese nuevamente su contraseña:")
+  if ingresado==ingresado2:
+    print("contraseña correcta")
