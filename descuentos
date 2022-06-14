@@ -1,0 +1,40 @@
+print("hola!ingrese sus datos")
+nombre=input("ingrese su nombre:")
+sueldobruto=float(input("ingrese su sueldo bruto:"))
+
+
+prevision=input("ingrese opcion de prevision: isapre o fonasa:")
+prevision1=float(input(f"ingrese el porcentaje de {prevision}:"))
+previ1=prevision1/100
+dctooisapre=sueldobruto*previ1
+
+seguro=int(input("ingrese su porsentaje de seguro:"))
+seguro1=seguro/100
+dctoseguro=sueldobruto*seguro1
+
+afp=int(input("ingrese el descuento de afp: "))
+afp1= afp/100
+dctoafp=sueldobruto*afp1
+
+descuentos=(dctoafp+dctoseguro+dctooisapre)
+sueldoimponible=sueldobruto-descuentos
+
+
+print("\n 1-calcular el sueldo imponible \n 2-calcular los descuentos \n 3-salir \n")
+eleccion = int(input("escoja la opcion deseada:"))
+while eleccion!=3:
+      calcularelsueldoimponible=1
+      calcularlosdescuentos =2
+      salir=3
+      if eleccion==1:
+       print(f"total de descuntos:{descuentos}")
+       print((f"total a recibir: {sueldoimponible}"))
+       print("\n 1-calcular el sueldo imposible \n 2-calcular los descuentos \n3-salir\n")
+       eleccion=int(input("escoja la opcion deseada:"))
+
+      elif eleccion==2:
+       print(f"sus descuentos son,afp= {dctoafp},seguro= {dctoseguro},prevision= {dctooisapre} y su total es ,{descuentos}")
+       print("\n1-calcular el sueldo imposible \n 2-calular los descuentos \n3-salir")
+       eleccion=int(input("escoja la opcion deseada:"))
+else:
+   print("hasta pronto")
