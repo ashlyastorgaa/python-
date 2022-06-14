@@ -1,0 +1,47 @@
+import os
+print("opcion 1 = suma")
+print("opcion 2 = resta")
+print("opcion 3 = multiplicacion")
+print("opcion 4 = promedio")
+print("opcion 5 = salir")
+opciones=int(input("ingrese la opcion deseada:"))
+suma=1
+resta=2
+multiplicacion=3
+promedio=4
+salir=5
+
+while opciones==suma:
+    n1=int(input("ingrese primer dato:"))
+    n2=int(input("ingrese segundo dato:"))
+    sum=(n1+n2)
+    print("el resultado de la suma es:",sum)
+    opciones=int(input("ingrese opcion deseada:"))
+
+while opciones==resta:
+    n1r = int(input("ingrese el primer dato:"))
+    n2r = int(input("ingrese el segundo dato:"))
+    resta=(n1r-n2r)
+    print("el resultado de la resta es:",resta)
+    opciones=int(input("ingrese opcion deseada:"))
+while opciones==multiplicacion:
+    n1m=int(input("ingrese el primer dato:"))
+    n2m=int(input("ingrese el segundo dato"))
+    multi=(n1m*n2m)
+    print("el resultado de la multiplicacion es:",multi)
+    opciones=int(input("ingrese opcion deseada:"))
+while opciones==promedio:
+    n1d=int(input("ingrese el primer dato:"))
+    n2d=int(input("ingrese el segundo dato:"))
+    n3d=int(input("ingrese el tercer dato:"))
+    prom=(n1d+n2d+n3d)/3
+    print("el promedio es:",prom)
+    opciones=int(input("ingrese opcion deseada:"))
+
+while opciones==salir:
+       print("hasta pronto")
+       break
+
+
+
+
