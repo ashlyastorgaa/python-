@@ -1,0 +1,17 @@
+pizza=input("¿desea que su pizza sea vegetariana?:")
+si="pizza vegetariana"
+no="pizza normal"
+if pizza=="si":
+    print("agrege un ingrediente")
+    Ivege=input(" pimenton o tofu:")
+    print(f"su pedido final es:{si} con {Ivege}")
+elif pizza=="no":
+     Inormal=input("peperoni,jamon o salmon:")
+     print(f"su pedido final es:{no} con {Inormal}")
+elif pizza=="pedido":
+     print(f"su pedido final es:",si and no)
+else:
+    print("ingrese dato correcto")
+
+
+
